@@ -4,15 +4,17 @@ import Data from "./components/Data";
 import Discount from "./components/Discount";
 import Header from "./components/Header";
 import Order from "./components/Order";
+import Book from "./components/Book";
 
 const Home = () => {
     return (
         <>
             <Header />
             <Category />
-            <Discount/>
-            <Order/>
-            <Data/>
+            <Discount />
+            <Order />
+            <Data />
+            <Book />
         </>
     );
 };

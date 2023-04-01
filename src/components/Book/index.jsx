@@ -1,8 +1,7 @@
 import React from "react";
 import { dataItems } from "./data";
-import "./style.css";
 
-const Data = () => {
+const Book = () => {
     return (
         <div className='container'>
             <div className='reason-wrapper'>
@@ -27,4 +26,4 @@ const Data = () => {
     );
 };
 
-export default Data;
+export default Book;
