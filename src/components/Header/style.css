@@ -1,0 +1,99 @@
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 0 30px;
+}
+.header-top__nav {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-top__nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.header-top__btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #55b74c;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__info {
+    display: flex;
+    gap: 98px;
+}
+
+.location-text,
+.contact-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #898989;
+}
+
+.location-point {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.contact-phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #55b74c;
+}
+
+.header_navigation {
+    margin-top: 43px;
+    width: 100%;
+    background: linear-gradient(180deg, #55b74c 0%, #4ba043 162.75%);
+    border-radius: 7px;
+    padding: 13px 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navigation__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.header-banner {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    background-image: url(../../img/hero.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header-banner__title {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.header-banner__text {
+    margin-top: 20px;
+    max-width: 450px;
+    width: 100%;
+}

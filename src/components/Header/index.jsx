@@ -1,0 +1,98 @@
+import React from "react";
+import "./style.css";
+
+import logo from "../../img/logo.svg";
+import { Link } from "react-router-dom";
+
+const Header = () => {
+    return (
+        <div className='container'>
+            <div className='header'>
+                <div className='header-top'>
+                    <nav className='header-top__nav'>
+                        <Link to='/contact'>
+                            <a className='header-top__nav-link'>Контакты</a>
+                        </Link>
+                        <Link to='aboutUs'>
+                            <a className='header-top__nav-link'>О нас</a>
+                        </Link>
+                        <Link to='delivery'>
+                            <a className='header-top__nav-link'>Доставка</a>
+                        </Link>
+                        <Link to='security'>
+                            <a className='header-top__nav-link'>
+                                Политика безопасности
+                            </a>
+                        </Link>
+                        <Link to='agrement'>
+                            <a className='header-top__nav-link'>
+                                Условия соглашения
+                            </a>
+                        </Link>
+                    </nav>
+                    <button className='header-top__btn'>Личный кабинет</button>
+                </div>
+                <div className='header-nav'>
+                    <a href='/'>
+                        <img src={logo} alt='logo' />
+                    </a>
+                    <div className='header-nav__info'>
+                        <div className='location'>
+                            <p className='location-text'>Адрес магазина</p>
+                            <span className='location-point'>г. Москва</span>
+                        </div>
+
+                        <a href='tel:+99899999999' className='contact'>
+                            <div className='contact-text'>Главный офис</div>
+                            <div className='contact-phone'>
+                                +7 968 765-70-07
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div className='header_navigation'>
+                    <a href='#' className='header-navigation__link'>
+                        Цветы
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Подарки
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Фруктовые корзины
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Воздушные шарики
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Комнатные растения
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Сладости
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Услуги
+                    </a>
+                    <a href='#' className='header-navigation__link'>
+                        Аксессуары
+                    </a>
+                </div>
+                <div className='header-banner'>
+                    <div className='header-banner__content'>
+                        <h1 className='header-banner__title'>
+                            Lorem ipsum dolor
+                        </h1>
+                        <p className='header-banner__text'>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Eos qui omnis, voluptatum harum ullam officiis
+                            quaerat beatae excepturi. Maiores, natus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Header;
+
+// Route

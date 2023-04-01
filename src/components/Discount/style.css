@@ -1,0 +1,59 @@
+.discount_section {
+    margin-block: 75px;
+    width: 100%;
+}
+
+.discount_section-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    width: 278px;
+    background-color: #fff;
+}
+
+.card_img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card_title {
+    margin-block: 24px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.card_price {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.card_btn {
+    width: 100%;
+    border-radius: 7px;
+    background: #55B74C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 24px;
+    padding: 12px 48px;
+    border: 1px solid #55B74C;
+    transition: all 0.4s ease-in-out;
+}
+
+.card_btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #55B74C;
+}

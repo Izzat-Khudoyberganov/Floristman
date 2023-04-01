@@ -1,0 +1,131 @@
+.order_section {
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.order_form-content {
+    border: 1px solid #55B74C;
+    border-radius: 7px;
+    padding: 45px 45px 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.order_form {
+    max-width: 690px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name_input,
+.phone_input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #55B74C;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #898989;
+}
+
+.order_form input:focus {
+    outline: none;
+}
+
+.order_form input ::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #898989;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #55B74C;
+    border-radius: 7px;
+    font-family: sans-serif;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #898989;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.btn_group {
+    display: flex;
+    column-gap: 30px;
+}
+
+.add_file-btn {
+    max-width: 356px;
+    padding-block: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #55B74C;
+    border-radius: 7px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #55B74C;
+    transition: .3s;
+}
+
+.add_file-btn:hover {
+    cursor: pointer;
+    background-color: #55B74C;
+    color: #fff;
+}
+
+.submit_btn {
+    max-width: 303px;
+    width: 100%;
+    padding-block: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #55B74C;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    border-radius: 7px;
+    transition: .4s;
+    border: 2px solid #55B74C;
+}
+
+.submit_btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #55B74C;
+}
+
+.order_img {
+    max-width: 390px;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.order_img img {
+    width: 100%;
+}
+
+.order_img-img {
+    display: block;
+}
