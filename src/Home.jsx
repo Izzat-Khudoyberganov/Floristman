@@ -5,6 +5,7 @@ import Discount from "./components/Discount";
 import Header from "./components/Header";
 import Order from "./components/Order";
 import Book from "./components/Book";
+import Footer from "./components/Footer";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Order />
             <Data />
             <Book />
+            <Footer />
         </>
     );
 };
