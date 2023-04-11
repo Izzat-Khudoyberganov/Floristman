@@ -1,3 +1,5 @@
+import Img from "../../img/telephoneImg.svg";
+
 const footerLinks = [
     {
         id: 0,
@@ -52,4 +54,17 @@ const catalogLink = [
     },
 ];
 
-export { footerLinks, catalogLink };
+const phoneLinks = [
+    {
+        id: 0,
+        image: Img,
+        text: "+7 968 765-70-07",
+    },
+    {
+        id: 1,
+        image: Img,
+        text: "+7 968 765-70-07",
+    },
+];
+
+export { footerLinks, catalogLink, phoneLinks };

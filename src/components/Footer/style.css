@@ -36,3 +36,21 @@
     line-height: 25px;
     color: #898989;
 }
+
+.footer-content__phone {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.phone_link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.footer-content__phone img {
+    width: 23px;
+    height: 23px;
+}
