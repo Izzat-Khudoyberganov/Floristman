@@ -7,6 +7,7 @@ import Order from "./components/Order";
 import Book from "./components/Book";
 import Footer from "./components/Footer";
 import Counter from "./components/Counter";
+import JsonData from "./components/JsonData";
 
 const Home = () => {
     return (
@@ -18,7 +19,8 @@ const Home = () => {
             <Data />
             <Book />
             <Footer /> */}
-            <Counter />
+            {/* <Counter /> */}
+            <JsonData />
         </>
     );
 };

@@ -1,0 +1,29 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    padding: 50px 25px;
+}
+
+.content-card {
+    border: 1px solid #050505;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content-card__title {
+    font-size: 20px;
+    line-height: 100%;
+    color: #050505;
+}
+
+.content-card__text {
+    color: #7c7070;
+    margin-top: 20px;
+}
