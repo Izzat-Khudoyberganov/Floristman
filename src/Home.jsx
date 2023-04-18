@@ -6,21 +6,17 @@ import Header from "./components/Header";
 import Order from "./components/Order";
 import Book from "./components/Book";
 import Footer from "./components/Footer";
-import Counter from "./components/Counter";
-import JsonData from "./components/JsonData";
 
 const Home = () => {
     return (
         <>
-            {/* <Header />
+            <Header />
             <Category />
             <Discount />
             <Order />
             <Data />
             <Book />
-            <Footer /> */}
-            {/* <Counter /> */}
-            <JsonData />
+            <Footer />
         </>
     );
 };
