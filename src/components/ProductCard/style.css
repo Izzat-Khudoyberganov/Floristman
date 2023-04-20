@@ -6,6 +6,12 @@
     min-height: 485px;
 }
 
+.product-cart img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
 .product-title {
     margin-block: 24px;
     font-weight: 700;

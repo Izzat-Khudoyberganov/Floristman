@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { categoryData } from "./data";
 import "./style.css";
 
@@ -14,9 +15,12 @@ const Category = () => {
                                 className='category-content__card-img'
                                 alt={el.text}
                             />
-                            <button className='category-content_card-btn'>
+                            <Link
+                                to={el.link}
+                                className='category-content_card-btn'
+                            >
                                 {el.text}
-                            </button>
+                            </Link>
                         </div>
                     ))}
                 </div>

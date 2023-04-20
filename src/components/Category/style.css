@@ -37,5 +37,7 @@
     cursor: pointer;
     position: absolute;
     bottom: 0;
+    display: block;
+    text-align: center;
     left: 0;
 }

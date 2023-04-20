@@ -3,6 +3,7 @@ import "./style.css";
 
 import logo from "../../img/logo.svg";
 import { Link } from "react-router-dom";
+import { navbarLink } from "./data";
 
 const Header = () => {
     return (
@@ -51,30 +52,15 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='header_navigation'>
-                    <a href='#' className='header-navigation__link'>
-                        Цветы
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Подарки
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Фруктовые корзины
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Воздушные шарики
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Комнатные растения
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Сладости
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Услуги
-                    </a>
-                    <a href='#' className='header-navigation__link'>
-                        Аксессуары
-                    </a>
+                    {navbarLink.map((el) => (
+                        <Link
+                            key={el.id}
+                            to={el.link}
+                            className='header-navigation__link'
+                        >
+                            {el.text}
+                        </Link>
+                    ))}
                 </div>
                 <div className='header-banner'>
                     <div className='header-banner__content'>
