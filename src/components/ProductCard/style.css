@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 485px;
+    position: relative;
 }
 
 .product-cart img {
@@ -12,6 +13,20 @@
     object-fit: contain;
 }
 
+.like-btn {
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
 .product-title {
     margin-block: 24px;
     font-weight: 700;

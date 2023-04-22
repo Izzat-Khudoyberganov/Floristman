@@ -24,11 +24,7 @@ const Discount = () => {
                 >
                     {discountData.map((el) => (
                         <SwiperSlide key={el.id}>
-                            <ProductCard
-                                image={el.image}
-                                title={el.title}
-                                price={el.price}
-                            />
+                            <ProductCard data={el} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

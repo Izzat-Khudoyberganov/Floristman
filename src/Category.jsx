@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Header from "./components/Header";
 import ProductCard from "./components/ProductCard";
 import Discount from "./components/Discount";
@@ -8,6 +9,7 @@ import Footer from "./components/Footer";
 const Category = () => {
     const { type } = useParams();
     const [data, setData] = useState(null);
+    const { like } = useSelector((state) => state);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -30,8 +32,8 @@ const Category = () => {
                     {data?.map((el) => (
                         <ProductCard
                             key={el.id}
-                            image={el.images[0]}
-                            title={el.name}
+                            data={el}
+                            liked={el.id in like}
                         />
                     ))}
                 </div>
