@@ -1,9 +1,10 @@
 import React from "react";
-import "./style.css";
-
-import logo from "../../img/logo.svg";
 import { Link } from "react-router-dom";
 import { navbarLink } from "./data";
+import "./style.css";
+
+import likeImg from "../../img/like.svg";
+import logo from "../../img/logo.svg";
 
 const Header = () => {
     return (
@@ -34,9 +35,10 @@ const Header = () => {
                     <button className='header-top__btn'>Личный кабинет</button>
                 </div>
                 <div className='header-nav'>
-                    <a href='/'>
+                    <Link to='/'>
                         <img src={logo} alt='logo' />
-                    </a>
+                    </Link>
+
                     <div className='header-nav__info'>
                         <div className='location'>
                             <p className='location-text'>Адрес магазина</p>
@@ -49,6 +51,11 @@ const Header = () => {
                                 +7 968 765-70-07
                             </div>
                         </a>
+                    </div>
+                    <div>
+                        <Link to='/favourite'>
+                            <img src={likeImg} alt='like' />
+                        </Link>
                     </div>
                 </div>
                 <div className='header_navigation'>
@@ -80,5 +87,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// Route

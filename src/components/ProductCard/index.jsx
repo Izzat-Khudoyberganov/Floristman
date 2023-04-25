@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { handleLike } from "../../redux/favourite";
+import classNames from "classnames";
 import "./style.css";
 
 import like from "../../img/like.svg";
@@ -11,7 +12,10 @@ const ProductCard = ({ data, liked }) => {
     console.log(data?.title);
     return (
         <div className='product-cart'>
-            <button className='like-btn' onClick={handleLikeButtonClick}>
+            <button
+                className={classNames("like-btn", liked && "active")}
+                onClick={handleLikeButtonClick}
+            >
                 <img src={like} />
             </button>
             <img src={data?.images?.[0]} alt='image' />

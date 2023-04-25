@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Home from "./Home";
 import Category from "./Category";
+import Favourite from "./Favourite";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Route element={<Category />} path='/category/:type' />
                 <Route element={<Contact />} path='/contact' />
                 <Route element={<AboutUs />} path='/aboutUs' />
+                <Route element={<Favourite />} path='/favourite' />
             </Routes>
         </BrowserRouter>
     );
