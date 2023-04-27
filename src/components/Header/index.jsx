@@ -4,6 +4,7 @@ import { navbarLink } from "./data";
 import "./style.css";
 
 import likeImg from "../../img/like.svg";
+import cartImg from "../../img/cart.svg";
 import logo from "../../img/logo.svg";
 
 const Header = () => {
@@ -52,10 +53,17 @@ const Header = () => {
                             </div>
                         </a>
                     </div>
-                    <div>
-                        <Link to='/favourite'>
-                            <img src={likeImg} alt='like' />
-                        </Link>
+                    <div className='d-flex'>
+                        <div>
+                            <Link to='/favourite'>
+                                <img src={likeImg} alt='like' />
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to='/cart'>
+                                <img src={cartImg} alt='like' />
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className='header_navigation'>

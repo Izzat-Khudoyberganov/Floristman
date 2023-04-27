@@ -5,11 +5,13 @@ import classNames from "classnames";
 import "./style.css";
 
 import like from "../../img/like.svg";
+import { addToCart, removeFromCart } from "../../redux/cart";
 
-const ProductCard = ({ data, liked }) => {
+const ProductCard = ({ data, liked, select }) => {
     const dispatch = useDispatch();
     const handleLikeButtonClick = () => dispatch(handleLike(data));
-    console.log(data?.title);
+    const selectItem = () =>
+        dispatch(select ? removeFromCart(data.id) : addToCart(data));
     return (
         <div className='product-cart'>
             <button
@@ -24,7 +26,9 @@ const ProductCard = ({ data, liked }) => {
                 <p className='product-price'>{data.price}</p>
                 <p className='older-price'> 25 000 so'm</p>
             </div>
-            <button className='cart-button'>Add to cart</button>
+            <button className='cart-button' onClick={selectItem}>
+                Add to cart
+            </button>
         </div>
     );
 };
