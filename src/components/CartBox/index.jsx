@@ -10,13 +10,17 @@ const CartBox = () => {
         <div className='cart-box'>
             <div className='container'>
                 <div className='content'>
-                    {cartItems?.map((el) => (
-                        <ProductCard
-                            data={el}
-                            select={el.id in cart}
-                            key={el.id}
-                        />
-                    ))}
+                    {cartItems.length ? (
+                        cartItems?.map((el) => (
+                            <ProductCard
+                                data={el}
+                                select={el.id in cart}
+                                key={el.id}
+                            />
+                        ))
+                    ) : (
+                        <h1>Cart box is empty 😞😞😞</h1>
+                    )}
                 </div>
             </div>
         </div>

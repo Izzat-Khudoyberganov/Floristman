@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { navbarLink } from "./data";
 import "./style.css";
 
@@ -8,6 +9,9 @@ import cartImg from "../../img/cart.svg";
 import logo from "../../img/logo.svg";
 
 const Header = () => {
+    const { like, cart } = useSelector((state) => state);
+    const likedItems = Object.keys(like).length;
+    const cartItems = Object.keys(cart).length;
     return (
         <div className='container'>
             <div className='header'>
@@ -57,11 +61,13 @@ const Header = () => {
                         <div>
                             <Link to='/favourite'>
                                 <img src={likeImg} alt='like' />
+                                <p>{likedItems}</p>
                             </Link>
                         </div>
                         <div>
                             <Link to='/cart'>
                                 <img src={cartImg} alt='like' />
+                                <p>{cartItems}</p>
                             </Link>
                         </div>
                     </div>

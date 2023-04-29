@@ -20,14 +20,14 @@ const ProductCard = ({ data, liked, select }) => {
             >
                 <img src={like} />
             </button>
-            <img src={data?.images?.[0]} alt='image' />
+            <img src={data?.images ? data.images[0] : data.image} alt='image' />
             <h3 className='product-title'>{data.title}</h3>
             <div className='price-box'>
                 <p className='product-price'>{data.price}</p>
                 <p className='older-price'> 25 000 so'm</p>
             </div>
             <button className='cart-button' onClick={selectItem}>
-                Add to cart
+                {select ? "Remove from cart" : "Add to cart"}
             </button>
         </div>
     );

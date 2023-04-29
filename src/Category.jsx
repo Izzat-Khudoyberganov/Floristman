@@ -9,7 +9,9 @@ import Footer from "./components/Footer";
 const Category = () => {
     const { type } = useParams();
     const [data, setData] = useState(null);
-    const { like } = useSelector((state) => state);
+    const { like, cart } = useSelector((state) => state);
+    console.log(Object.keys(like).length);
+    console.log(Object.keys(cart).length);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -33,6 +35,7 @@ const Category = () => {
                         <ProductCard
                             key={el.id}
                             data={el}
+                            select={el.id in cart}
                             liked={el.id in like}
                         />
                     ))}
